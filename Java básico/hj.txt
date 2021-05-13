@@ -1,0 +1,53 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class Rgb extends JFrame implements ActionListener{
+ private JLabel lrojo;
+ private JLabel lverde;
+ private JLabel lazul;
+ private JComboBox combored;
+ private JComboBox comboverde;
+ private JComboBox comboazul;
+ private JButton boton;
+
+ public Rgb(){
+  setLayout(null);
+  
+ lrojo = new JLabel("Rojito");
+ lrojo.setBounds(10,10,100,10);
+ add(lrojo);
+ 
+ combored = new JCombo();
+ combored.setBounds(120,10,50,30);
+ for(int i = 0; i<=255; i++){
+  combored.addItem(String.valueOf(i));
+ }
+ add(combored);
+
+
+ lverde = new JLabel("Verde");
+ lverde.setBounds();
+ add(lverde);
+
+ comboverde = new JCombo();
+ comboverde.setBounds(120,10,50,30);
+ for(int i = 0; i<=255; i++){
+  comboverde.addItem(String.valueOf(i));
+ }
+ add(comboverde);
+ 
+ lazul = new JLabel("Azul");
+ lazul.setBounds();
+ add(lverde);
+
+  comboazul = new JCombo();
+ comboazul.setBounds(120,10,50,30);
+ for(int i = 0; i<=255; i++){
+  comboazul.addItem(String.valueOf(i));
+ }
+ add(comboazul);
+  
+ }
+}
+
